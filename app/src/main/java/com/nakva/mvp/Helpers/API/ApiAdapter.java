@@ -14,10 +14,10 @@ import retrofit.Retrofit;
 
 public class ApiAdapter {
 
-    public static final String URL_BASE = "http://192.168.1.65";
+    public static final String URL_BASE = "http://192.168.1.65:3000";
     public static ApiInterface API_INTERFACE = null;
 
-    public ApiInterface getAdapter(){
+    public static ApiInterface getAdapter(){
         if(API_INTERFACE == null){
             OkHttpClient client = new OkHttpClient();
             HttpLoggingInterceptor interceptro;

@@ -1,6 +1,7 @@
 package com.nakva.mvp.Injectors;
 
 import com.nakva.mvp.Login.ILoginModel;
+import com.nakva.mvp.Login.LoginModel;
 
 /**
  * Created by Juancho on 04/02/17.
@@ -11,6 +12,6 @@ import com.nakva.mvp.Login.ILoginModel;
 public class Injector {
 
     public static ILoginModel provideInjector(){
-        return null;
+        return new LoginModel();
     }
 }

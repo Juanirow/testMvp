@@ -6,8 +6,8 @@ package com.nakva.mvp.Login;
  * linanjm90@gmail.com
  */
 
-public interface ILoginPresenter {
+public interface ILoginModelCallback {
+    void onInternalServerError();
 
-    void onClickLogin();
-
+    void onWrongCredentials();
 }

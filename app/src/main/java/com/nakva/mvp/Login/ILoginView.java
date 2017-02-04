@@ -7,4 +7,18 @@ package com.nakva.mvp.Login;
  */
 
 public interface ILoginView {
+
+    String getEmail();
+
+    void showEmailEmptyError();
+
+    void showEmailInvalidError();
+
+    String getPassword();
+
+    void showPasswordEmptyError();
+
+    void showInternalServerError();
+
+    void showWrongCredentialsError();
 }
